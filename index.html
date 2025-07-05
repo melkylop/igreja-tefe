@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igreja Tefé-AM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Botão de tocar música -->
+<div class="player-musica">
+  <button id="botaoMusica">🎵 Clique aqui para iniciar a música</button>
+</div>
+
+<!-- Áudio escondido -->
+<audio id="musicaFundo" src="musica.mp3.mp3" loop></audio>
+
+  <div class="container">
+    <!-- Mensagem inicial de boas-vindas -->
+    <div id="boasVindas" class="boas-vindas">
+      Seja bem-vindo(a)! Que a paz do Senhor esteja com você 🙏
+    </div>
+
+    <!-- Menu de opções -->
+    <div id="menu" class="menu">
+      <button onclick="mostrarConteudo('cultos')">Dias de Cultos</button>
+      <button onclick="mostrarConteudo('secretaria')">Fale com a secretaria</button>
+      <button onclick="mostrarConteudo('oracoes')">Pedidos de Orações</button>
+      <button onclick="mostrarConteudo('eventos')">Eventos</button>
+      <button onclick="mostrarConteudo('galeria')">Galeria de Fotos</button>
+      <button onclick="mostrarConteudo('informacoes')">Informações Gerais</button>
+    </div>
+
+    <!-- Conteúdos individuais -->
+    <div id="cultos" class="conteudo">
+      <h2>Dias de Cultos</h2>
+      <p><strong>Domingos:</strong> Escola Bíblica às 8h | Culto da Família às 20h</p>
+      <p><strong>Terças:</strong> Culto à noite às 20h</p>
+      <button class="voltar-btn" onclick="voltarMenu()">⬅ Voltar ao Início</button>
+    </div>
+
+    <div id="secretaria" class="conteudo">
+      <h2>Fale com a Secretaria</h2>
+      <p>Para entrar em contato, envie uma mensagem pelo WhatsApp: (97) 9XXXX-XXXX</p>
+      <button class="voltar-btn" onclick="voltarMenu()">⬅ Voltar ao Início</button>
+    </div>
+
+    <div id="oracoes" class="conteudo">
+      <h2>Pedidos de Oração</h2>
+      <p>Envie seu pedido de oração pelo nosso WhatsApp ou durante os cultos. Estamos orando por você 🙏</p>
+      <button class="voltar-btn" onclick="voltarMenu()">⬅ Voltar ao Início</button>
+    </div>
+
+    <div id="eventos" class="conteudo">
+      <h2>Eventos</h2>
+      <p>Fique atento aos avisos nos cultos e redes sociais para os próximos eventos especiais!</p>
+      <button class="voltar-btn" onclick="voltarMenu()">⬅ Voltar ao Início</button>
+    </div>
+
+    <div id="galeria" class="conteudo">
+      <h2>Galeria de Fotos</h2>
+      <p>Em breve teremos uma galeria com momentos especiais da nossa igreja!</p>
+      <button class="voltar-btn" onclick="voltarMenu()">⬅ Voltar ao Início</button>
+    </div>
+
+    <div id="informacoes" class="conteudo">
+      <h2>Informações Gerais</h2>
+      <p>Endereço: Rua Exemplo, Centro, Tefé-AM</p>
+      <p>Pastor Responsável: Pr. João da Silva</p>
+      <p>Horário de funcionamento: 8h às 21h, todos os dias</p>
+      <button class="voltar-btn" onclick="voltarMenu()">⬅ Voltar ao Início</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
